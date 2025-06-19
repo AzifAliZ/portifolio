@@ -1,0 +1,24 @@
+.academic-section {
+  height: 100vh;
+  background-color: #111;
+  color: white;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #0ff;
+  margin-bottom: 2rem;
+}
+
+.academic-gif {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #0ff;
+}

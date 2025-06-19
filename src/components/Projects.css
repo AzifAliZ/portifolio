@@ -1,0 +1,84 @@
+.projects-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.solar-banner {
+  width: 90%;
+  height: 80%;
+  background-color: #111;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 2;
+  pointer-events: auto;
+  color: #0ff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.center-text:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #0ff;
+  border-bottom: 2px solid #0ff;
+}
+
+.orbit-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 360px;
+  margin: -180px 0 0 -180px;
+  animation: spin 60s linear infinite;
+  pointer-events: none;
+}
+
+.orbit-container:hover {
+  animation-play-state: paused;
+}
+
+.orbit-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  color: #0ff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.orbit-icon:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #0ff;
+  transform: scale(1.2);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
